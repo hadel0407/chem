@@ -127,7 +127,7 @@ At **gas saturation**, when the dissolved concentration reaches <span class="mat
 
 <div class="mathjax">
 $$
-P_{\text{sat}} = \frac{C_{\text{sat}}}{k_H} \quad \Rightarrow \quad \frac{1}{k_H} \approx P_{\text{sat}}
+P_{\text{sat}} = \frac{C_{\text{sat}}}{k_H} \quad \Rightarrow \quad \frac{1}{k_H} = P_{\text{sat}}
 $$
 </div>
 
