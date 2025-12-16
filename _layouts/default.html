@@ -55,7 +55,14 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <!-- Home 显示在左边 -->
+      <a class="navbar-brand me-auto" href="{{ '/' | relative_url }}">
+        Home
+      </a>
+      <!-- 如果有其他菜单，可以放在右边 -->
+      <div class="ms-auto">
+        <!-- 这里可以添加其他导航链接 -->
+      </div>
     </div>
   </nav>
 
