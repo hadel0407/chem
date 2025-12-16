@@ -7,8 +7,6 @@ description: "A clear comparison of Raoult's Law and Henry's Law, covering ideal
 <!-- 引入 MathJax 渲染公式 -->
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-# Raoult's Law vs Henry's Law: Vapor Pressure and Gas Solubility Explained
-
 In **physical chemistry** and **chemical engineering**, understanding solution behavior is essential for vapor–liquid equilibrium (VLE) analysis, separation processes, and material loss estimation. Two fundamental laws are widely used:
 
 - **Raoult's Law** – relates vapor pressure to liquid-phase composition  
@@ -30,11 +28,12 @@ $$
 P_i = x_i \cdot P_i^0
 $$
 
-Where:
+| Symbol | Meaning |
+|--------|---------|
+| $P_i$ | partial vapor pressure of component $i$ in the vapor phase |
+| $x_i$ | mole fraction of component $i$ in the liquid phase |
+| $P_i^0$ | saturated vapor pressure of pure component $i$ at the same temperature |
 
-- $P_i$ — partial vapor pressure of component $i$ in the vapor phase  
-- $x_i$ — mole fraction of component $i$ in the liquid phase  
-- $P_i^0$ — saturated vapor pressure of pure component $i$ at the same temperature  
 
 **Example**
 
