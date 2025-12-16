@@ -16,23 +16,23 @@ Although they apply to different components, **both laws exhibit linear behavior
 
 ---
 
-## 1. Raoult's Law and Henry's Law
+## Raoult's Law and Henry's Law
 
-### 1.1 Raoult's Law
+### Raoult's Law
 
 Raoult's Law describes the **partial vapor pressure of a component in an ideal liquid mixture**. It is accurate for **solvents and volatile components** when intermolecular interactions between unlike molecules are negligible.
 
 **Mathematical expression:**
 
 $$
-P_i = x_i \cdot P_i^0
+P_i = x_i \cdot P_i^{0}
 $$
 
 Where:
 
 - $P_i$ — partial vapor pressure of component $i$ in the vapor phase  
 - $x_i$ — mole fraction of component $i$ in the liquid phase  
-- $P_i^0$ — saturated vapor pressure of pure component $i$ at the same temperature  
+- $P_i^{0}$ — saturated vapor pressure of pure component $i$ at the same temperature  
 
 **Example**
 
@@ -40,22 +40,18 @@ A liquid mixture contains 50 mol% ethanol.
 The saturated vapor pressure of pure ethanol at 25 °C is 0.08 atm.
 
 $$
-x_{\text{ethanol}} = 0.5
-$$
-
-$$
-P_{\text{ethanol}}^0 = 0.08\ \text{atm}
+x_{\text{ethanol}} = 0.5, \quad P_{\text{ethanol}}^{0} = 0.08\ \text{atm}
 $$
 
 Applying Raoult’s Law:
 
 $$
-P_{\text{ethanol}} = x_{\text{ethanol}} \cdot P_{\text{ethanol}}^0 = 0.5 \times 0.08 = 0.04\ \text{atm}
+P_{\text{ethanol}} = x_{\text{ethanol}} \cdot P_{\text{ethanol}}^{0} = 0.5 \times 0.08 = 0.04\ \text{atm}
 $$
 
 ---
 
-### 1.2 Henry's Law
+### Henry's Law
 
 Henry's Law describes the **solubility of a gas in a liquid at equilibrium**. It is applicable to **dilute gas components** dissolved in liquids.
 
@@ -79,7 +75,7 @@ Where:
 
 ---
 
-## 2. Relationship in Ideal Solutions
+## Relationship in Ideal Solutions
 
 In **ideal solutions**, solute–solvent interactions are negligible, and both laws exhibit **linear proportionality**.
 
@@ -88,7 +84,7 @@ In **ideal solutions**, solute–solvent interactions are negligible, and both l
 - **Raoult's Law (liquid → vapor):**
 
 $$
-P_i = x_i \cdot P_i^0
+P_i = x_i \cdot P_i^{0}
 $$
 
 - **Henry's Law (gas → liquid):**
@@ -97,7 +93,7 @@ $$
 C = k_H \cdot P
 $$
 
-Henry's Law can be rearranged to express partial pressure:
+Henry's Law can be rearranged:
 
 $$
 P = \frac{C}{k_H}
@@ -113,43 +109,40 @@ $$
 
 | Law | Primary focus | Mathematical form |
 |----|----|----|
-| Raoult's Law | Vapor pressure | $P_i = x_i P_i^0$ |
+| Raoult's Law | Vapor pressure | $P_i = x_i P_i^{0}$ |
 | Henry's Law | Gas solubility | $C = k_H P$ |
 
 - **Raoult's Law** focuses on vapor pressure changes caused by liquid composition  
 - **Henry's Law** focuses on dissolved gas concentration governed by gas pressure  
 
-In ideal systems, both laws describe the **same linear thermodynamic behavior from different perspectives**.
-
 ---
 
-## 3. Deviations in Real Solutions
+## Deviations in Real Solutions
 
 Real solutions deviate from ideality due to **intermolecular forces**, such as hydrogen bonding, polarity differences, and van der Waals forces.
 
-### 3.1 Raoult's Law deviations
+### Raoult's Law deviations
 
 - Vapor pressure no longer varies linearly with mole fraction  
 - **Positive deviation**: weaker intermolecular interactions → higher vapor pressure  
 - **Negative deviation**: stronger interactions → lower vapor pressure  
 
-### 3.2 Henry's Law deviations
+### Henry's Law deviations
 
 - Gas solubility deviates from linearity at elevated pressures  
 - Strongly influenced by solvent composition and temperature  
 
-### Practical validity in real systems
+### Practical validity
 
-- **Raoult's Law** remains valid for the **solvent** in dilute solutions  
-- **Henry's Law** remains valid for **trace gas solutes**
+- **Raoult's Law** valid for **solvent** in dilute solutions  
+- **Henry's Law** valid for **trace gas solutes**
 
-**Example: Nitrogen dissolved in liquid propylene**
+**Example: Nitrogen in liquid propylene**
 
-- Liquid phase: predominantly propylene with trace nitrogen  
 - Propylene vapor pressure:
 
 $$
-P_{\text{propylene}} \approx X_{\text{propylene}} \cdot P_{\text{propylene}}^0
+P_{\text{propylene}} \approx X_{\text{propylene}} \cdot P_{\text{propylene}}^{0}
 $$
 
 - Nitrogen solubility:
@@ -158,18 +151,14 @@ $$
 C_{\text{N}_2} \approx k_H \cdot P_{\text{N}_2}
 $$
 
-These approximations are widely used for engineering calculations.
-
 ---
 
-## 4. Applications in Chemical Engineering
-
-In industrial storage and transfer systems, **non-condensable gas (NCG) purging** is commonly required. During purging, volatile liquids may evaporate into the gas phase, resulting in material losses.
+## Applications in Chemical Engineering
 
 ### Step 1: Vapor pressure of liquid component
 
 $$
-P_{\text{material}} = X_{\text{material}} \cdot P_{\text{material}}^0
+P_{\text{material}} = X_{\text{material}} \cdot P_{\text{material}}^{0}
 $$
 
 ### Step 2: Gas-phase volume fraction
@@ -178,11 +167,6 @@ $$
 y_{\text{material}} = \frac{P_{\text{material}}}{P_{\text{total}}}
 $$
 
-### Loss reduction strategies
-
-- Increasing system pressure reduces vapor-phase concentration  
-- Lowering temperature reduces saturated vapor pressure  
-
 ### Example: Propylene tank purged with nitrogen
 
 Operating conditions: 20 °C, total pressure = 15 atm
@@ -190,8 +174,8 @@ Operating conditions: 20 °C, total pressure = 15 atm
 | Parameter | Value |
 |----|----|
 | Mole fraction $X_{\text{C}_3\text{H}_6}$ | 1 |
-| Saturated vapor pressure $P_{\text{C}_3\text{H}_6}^0$ | 10 atm |
-| System pressure $P_{\text{total}}$ | 15 atm |
+| Saturated vapor pressure $P_{\text{C}_3\text{H}_6}^{0}$ | 10 atm |
+| Total pressure $P_{\text{total}}$ | 15 atm |
 
 Vapor-phase mole fraction:
 
@@ -199,24 +183,24 @@ $$
 y_{\text{C}_3\text{H}_6} = \frac{10}{15} \approx 0.667
 $$
 
-Lowering the temperature to 0 °C:
+Lowering temperature to 0 °C:
 
 $$
-P_{\text{C}_3\text{H}_6}^0 \approx 5.7\ \text{atm} \quad \Rightarrow \quad y_{\text{C}_3\text{H}_6} \approx 0.38
+P_{\text{C}_3\text{H}_6}^{0} \approx 5.7\ \text{atm} \quad \Rightarrow \quad y_{\text{C}_3\text{H}_6} \approx 0.38
 $$
 
-Increasing total pressure while keeping temperature at 20 °C:
+Increasing total pressure to 30 atm (20 °C):
 
 $$
 y_{\text{C}_3\text{H}_6} = \frac{10}{30} \approx 0.333
 $$
 
-✅ **Result:** Both lowering temperature and increasing total pressure reduce propylene loss. Combined, the effect is even more significant.
+✅ **Result:** Lowering temperature and increasing total pressure reduce propylene loss.
 
 ---
 
-## 5. Summary
+## Summary
 
-1. Raoult's Law and Henry's Law show similar linear behavior in **ideal solutions**.  
-2. In real systems, deviations occur, but Raoult's Law remains applicable to solvents and Henry's Law to trace gases.  
-3. These principles are powerful tools for **pressure control, temperature optimization, and material loss reduction** in chemical engineering practice.
+1. Raoult's Law and Henry's Law show linear behavior in **ideal solutions**.  
+2. Deviations occur in real systems, but Raoult's Law applies to solvents and Henry's Law to trace gases.  
+3. These principles guide **pressure control, temperature optimization, and material loss reduction** in chemical engineering.
