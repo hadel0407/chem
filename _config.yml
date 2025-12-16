@@ -1,9 +1,14 @@
-title: "Chemical Process Problem Solving"
-description: "Using theory to solve real chemical production problems."
+title: Chemical Process Problem Solving
+description: Using theory to solve real chemical production problems
+url: https://chem.zhanghd.fun
 baseurl: ""
-url: "https://chem.zhanghd.fun"
+
 markdown: kramdown
-theme: minima
+kramdown:
+  math_engine: mathjax
+
 plugins:
   - jekyll-seo-tag
-google_analytics: UA-XXXXXXX-X
+
+# GA4（不要 UA）
+google_analytics: G-0TB5EFN78M
