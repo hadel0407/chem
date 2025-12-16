@@ -4,7 +4,19 @@ date: 2025-12-16
 description: "A clear comparison of Raoult's Law and Henry's Law, covering ideal and real solutions with practical chemical engineering examples."
 ---
 
-<!-- 引入 MathJax 渲染公式 -->
+<!-- 引入 MathJax 并指定仅渲染带 class="mathjax" 的元素 -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']],
+    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+  },
+  options: {
+    processHtmlClass: 'mathjax',
+    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  }
+};
+</script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 In **physical chemistry** and **chemical engineering**, understanding solution behavior is essential for vapor–liquid equilibrium (VLE) analysis, separation processes, and material loss estimation. Two fundamental laws are widely used:
@@ -24,35 +36,34 @@ Raoult's Law describes the **partial vapor pressure of a component in an ideal l
 
 **Mathematical expression:**
 
+<div class="mathjax">
 $$
 P_i = x_i \cdot P_i^0
 $$
+</div>
 
 | Symbol | Meaning |
 |--------|---------|
-| $P_i$ | partial vapor pressure of component $i$ in the vapor phase |
-| $x_i$ | mole fraction of component $i$ in the liquid phase |
-| $P_i^0$ | saturated vapor pressure of pure component $i$ at the same temperature |
-
+| <span class="mathjax">\(P_i\)</span> | partial vapor pressure of component <span class="mathjax">\(i\)</span> in the vapor phase |
+| <span class="mathjax">\(x_i\)</span> | mole fraction of component <span class="mathjax">\(i\)</span> in the liquid phase |
+| <span class="mathjax">\(P_i^0\)</span> | saturated vapor pressure of pure component <span class="mathjax">\(i\)</span> at the same temperature |
 
 **Example**
 
 A liquid mixture contains 50 mol% ethanol.  
 The saturated vapor pressure of pure ethanol at 25 °C is 0.08 atm.
 
+<div class="mathjax">
 $$
 x_{\text{ethanol}} = 0.5
 $$
-
 $$
 P_{\text{ethanol}}^0 = 0.08\ \text{atm}
 $$
-
-Applying Raoult’s Law:
-
 $$
 P_{\text{ethanol}} = x_{\text{ethanol}} \cdot P_{\text{ethanol}}^0 = 0.5 \times 0.08 = 0.04\ \text{atm}
 $$
+</div>
 
 ---
 
@@ -62,15 +73,17 @@ Henry's Law describes the **solubility of a gas in a liquid at equilibrium**. It
 
 **Mathematical expression:**
 
+<div class="mathjax">
 $$
 C = k_H \cdot P
 $$
+</div>
 
 Where:
 
-- $C$ — concentration of dissolved gas in the liquid  
-- $P$ — partial pressure of the gas in the vapor phase  
-- $k_H$ — Henry’s constant (depends on solvent and temperature)  
+- <span class="mathjax">\(C\)</span> — concentration of dissolved gas in the liquid  
+- <span class="mathjax">\(P\)</span> — partial pressure of the gas in the vapor phase  
+- <span class="mathjax">\(k_H\)</span> — Henry’s constant (depends on solvent and temperature)  
 
 **Typical applications include:**
 
@@ -88,34 +101,42 @@ In **ideal solutions**, solute–solvent interactions are negligible, and both l
 
 - **Raoult's Law (liquid → vapor):**
 
+<div class="mathjax">
 $$
 P_i = x_i \cdot P_i^0
 $$
+</div>
 
 - **Henry's Law (gas → liquid):**
 
+<div class="mathjax">
 $$
 C = k_H \cdot P
 $$
+</div>
 
 Henry's Law can be rearranged to express partial pressure:
 
+<div class="mathjax">
 $$
 P = \frac{C}{k_H}
 $$
+</div>
 
-At **gas saturation**, when the dissolved concentration reaches $C_{\text{sat}}$, the corresponding partial pressure equals the saturated vapor pressure $P_{\text{sat}}$:
+At **gas saturation**, when the dissolved concentration reaches <span class="mathjax">\(C_{\text{sat}}\)</span>, the corresponding partial pressure equals the saturated vapor pressure <span class="mathjax">\(P_{\text{sat}}\)</span>:
 
+<div class="mathjax">
 $$
 P_{\text{sat}} = \frac{C_{\text{sat}}}{k_H} \quad \Rightarrow \quad \frac{1}{k_H} \approx P_{\text{sat}}
 $$
+</div>
 
 ### Conceptual comparison
 
 | Law | Primary focus | Mathematical form |
 |----|----|----|
-| Raoult's Law | Vapor pressure | $P_i = x_i P_i^0$ |
-| Henry's Law | Gas solubility | $C = k_H P$ |
+| Raoult's Law | Vapor pressure | <span class="mathjax">\(P_i = x_i P_i^0\)</span> |
+| Henry's Law | Gas solubility | <span class="mathjax">\(C = k_H P\)</span> |
 
 - **Raoult's Law** focuses on vapor pressure changes caused by liquid composition  
 - **Henry's Law** focuses on dissolved gas concentration governed by gas pressure  
@@ -149,15 +170,19 @@ Real solutions deviate from ideality due to **intermolecular forces**, such as h
 - Liquid phase: predominantly propylene with trace nitrogen  
 - Propylene vapor pressure:
 
+<div class="mathjax">
 $$
 P_{\text{propylene}} \approx X_{\text{propylene}} \cdot P_{\text{propylene}}^0
 $$
+</div>
 
 - Nitrogen solubility:
 
+<div class="mathjax">
 $$
 C_{\text{N}_2} \approx k_H \cdot P_{\text{N}_2}
 $$
+</div>
 
 These approximations are widely used for engineering calculations.
 
@@ -169,15 +194,19 @@ In industrial storage and transfer systems, **non-condensable gas (NCG) purging*
 
 ### Step 1: Vapor pressure of liquid component
 
+<div class="mathjax">
 $$
 P_{\text{material}} = X_{\text{material}} \cdot P_{\text{material}}^0
 $$
+</div>
 
 ### Step 2: Gas-phase volume fraction
 
+<div class="mathjax">
 $$
 y_{\text{material}} = \frac{P_{\text{material}}}{P_{\text{total}}}
 $$
+</div>
 
 ### Loss reduction strategies
 
@@ -188,29 +217,52 @@ $$
 
 Operating conditions: 20 °C, total pressure = 15 atm
 
-| Parameter | Value |
-|----|----|
-| Mole fraction $X_{\text{C}_3\text{H}_6}$ | 1 |
-| Saturated vapor pressure $P_{\text{C}_3\text{H}_6}^0$ | 10 atm |
-| System pressure $P_{\text{total}}$ | 15 atm |
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mole fraction <span class="mathjax">\(X_{\text{C}_3\text{H}_6}\)</span></td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Saturated vapor pressure <span class="mathjax">\(P_{\text{C}_3\text{H}_6}^0\)</span></td>
+      <td>10 atm</td>
+    </tr>
+    <tr>
+      <td>System pressure <span class="mathjax">\(P_{\text{total}}\)</span></td>
+      <td>15 atm</td>
+    </tr>
+  </tbody>
+</table>
 
 Vapor-phase mole fraction:
 
+<div class="mathjax">
 $$
 y_{\text{C}_3\text{H}_6} = \frac{10}{15} \approx 0.667
 $$
+</div>
 
 Lowering the temperature to 0 °C:
 
+<div class="mathjax">
 $$
 P_{\text{C}_3\text{H}_6}^0 \approx 5.7\ \text{atm} \quad \Rightarrow \quad y_{\text{C}_3\text{H}_6} \approx 0.38
 $$
+</div>
 
 Increasing total pressure while keeping temperature at 20 °C:
 
+<div class="mathjax">
 $$
 y_{\text{C}_3\text{H}_6} = \frac{10}{30} \approx 0.333
 $$
+</div>
 
 **Result:** Both lowering temperature and increasing total pressure reduce propylene loss. Combined, the effect is even more significant.
 
