@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Chemical Process Problem Solving</title>
-  <meta name="description" content="Using theory to solve real chemical production problems">
-</head>
-<body>
-  <h1>Chemical Process Problem Solving</h1>
-  <p>Using theory to solve real chemical production problems.</p>
+# Chemical Process Problem Solving
 
-  <h2>Articles</h2>
-  <ul>
-    <li><a href="posts/raoults-law.html">Raoult's Law Explained</a></li>
-    <li><a href="posts/henrys-law.html">Henry's Law Explained</a></li>
-  </ul>
-</body>
-</html>
+This is a Jekyll-based website to share chemical process knowledge.  
+Built to support:
+
+- Continuous article updates
+- Google AdSense integration
+- SEO optimization
+
+## Usage
+
+1. Install Jekyll: `gem install jekyll bundler`
+2. Run locally: `bundle exec jekyll serve`
+3. Deploy to GitHub Pages
