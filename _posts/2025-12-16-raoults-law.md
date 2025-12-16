@@ -1,177 +1,211 @@
 ---
 title: "Raoult's Law vs Henry's Law: Vapor Pressure and Gas Solubility Explained"
 date: 2025-12-16
-description: "Learn the differences between Raoult's Law and Henry's Law, their behavior in ideal and real solutions, and practical applications in chemical engineering processes."
+description: "A clear comparison of Raoult's Law and Henry's Law, covering ideal and real solutions with practical chemical engineering examples."
 ---
 
 # Raoult's Law vs Henry's Law: Vapor Pressure and Gas Solubility Explained
 
-In **physical chemistry** and **chemical engineering**, understanding solution behavior is essential. Two fundamental laws describe how components interact in solutions:
+In **physical chemistry** and **chemical engineering**, understanding solution behavior is essential for vapor–liquid equilibrium (VLE) analysis, separation processes, and material loss estimation. Two fundamental laws are widely used:
 
-- **Raoult's Law**: Relates the vapor pressure of liquid components to their mole fraction.  
-- **Henry's Law**: Relates the solubility of gases in liquids to the gas's partial pressure.  
+- **Raoult's Law** – relates vapor pressure to liquid-phase composition  
+- **Henry's Law** – relates gas solubility to gas-phase partial pressure  
 
-While they apply to different substances, in **ideal solutions**, their behavior is analogous. This article covers:
-
-1. Definitions and formulas  
-2. Behavior in ideal solutions  
-3. Deviations in real solutions  
-4. Applications in chemical engineering
+Although they apply to different components, **both laws exhibit linear behavior in ideal solutions**. This article explains their definitions, similarities, deviations in real systems, and practical engineering applications.
 
 ---
 
 ## 1. Raoult's Law and Henry's Law
 
-### Raoult's Law
+### 1.1 Raoult's Law
 
-Raoult's Law predicts the **vapor pressure of a component in a liquid mixture**. It is accurate for **solvents and volatile solutes in ideal solutions**, where **intermolecular interactions** between components are negligible.
+Raoult's Law describes the **partial vapor pressure of a component in an ideal liquid mixture**. It is accurate for **solvents and volatile components** when intermolecular interactions between unlike molecules are negligible.
 
-**Formula:**
+**Mathematical expression:**
 
 $$
 P_i = x_i \cdot P_i^{0}
 $$
 
-**Where:**  
-- \(P_i\) = Partial vapor pressure of component *i*  
-- \(x_i\) = Mole fraction of component *i*  
-- \(P_i^{0}\) = Saturated vapor pressure of pure component *i*  
+Where:
 
-**Example:**  
-A solution contains 50% ethanol (\(x_{\rm ethanol} = 0.5\)), and the saturated vapor pressure of pure ethanol at 25°C is \(P_{\rm ethanol}^{0} = 0.08 \, \rm atm\). Then:
+- <strong>P<sub>i</sub></strong> — partial vapor pressure of component <em>i</em> in the vapor phase  
+- <strong>x<sub>i</sub></strong> — mole fraction of component <em>i</em> in the liquid phase  
+- <strong>P<sub>i</sub><sup>0</sup></strong> — saturated vapor pressure of pure component <em>i</em> at the same temperature  
+
+**Example**
+
+A liquid mixture contains 50 mol% ethanol.  
+The saturated vapor pressure of pure ethanol at 25&nbsp;°C is 0.08&nbsp;atm.
+
+- x<sub>ethanol</sub> = 0.5  
+- P<sub>ethanol</sub><sup>0</sup> = 0.08 atm  
+
+Applying Raoult’s Law:
 
 $$
-P_{\rm ethanol} = x_{\rm ethanol} \cdot P_{\rm ethanol}^{0} = 0.5 \times 0.08 = 0.04 \, \rm atm
+P_{\text{ethanol}} = x_{\text{ethanol}} \cdot P_{\text{ethanol}}^{0}
+= 0.5 \times 0.08
+= 0.04\ \text{atm}
 $$
 
 ---
 
-### Henry's Law
+### 1.2 Henry's Law
 
-Henry's Law describes how **gases dissolve in liquids**. The solubility is proportional to the gas's partial pressure above the liquid:
+Henry's Law describes the **solubility of a gas in a liquid at equilibrium**. It is applicable to **dilute gas components** dissolved in liquids.
+
+**Mathematical expression:**
 
 $$
 C = k_H \cdot P
 $$
 
-**Where:**  
-- \(C\) = Concentration of the gas in the liquid  
-- \(P\) = Partial pressure of the gas above the liquid  
-- \(k_H\) = Henry's constant (depends on solvent and temperature)  
+Where:
 
-**Applications:** Gas absorption, carbonated beverages, and environmental chemistry.
+- <strong>C</strong> — concentration of dissolved gas in the liquid  
+- <strong>P</strong> — partial pressure of the gas in the vapor phase  
+- <strong>k<sub>H</sub></strong> — Henry’s constant (depends on solvent and temperature)  
+
+**Typical applications include:**
+
+- Gas absorption and stripping operations  
+- Carbonated beverage production  
+- Environmental engineering (air–water equilibrium systems)  
 
 ---
 
 ## 2. Relationship in Ideal Solutions
 
-In **ideal solutions**, solute-solvent interactions are negligible. Both laws exhibit **linear behavior**:
+In **ideal solutions**, solute–solvent interactions are negligible, and both laws exhibit **linear proportionality**.
 
-- **Raoult's Law**: Vapor pressure ∝ mole fraction
+### Linear behavior
+
+- **Raoult's Law (liquid → vapor):**
 
 $$
 P_i = x_i \cdot P_i^{0}
 $$
 
-- **Henry's Law**: Gas solubility ∝ partial pressure
+- **Henry's Law (gas → liquid):**
 
 $$
 C = k_H \cdot P
 $$
 
-Henry's Law can also be expressed in terms of partial pressure:
+Henry's Law can be rearranged to express partial pressure:
 
 $$
-P = \frac{C}{k_H} \approx C \cdot \frac{1}{k_H}
+P = \frac{C}{k_H}
 $$
 
-At **saturation** (\(C_{\rm sat}\)):
+At **gas saturation**, when the dissolved concentration reaches C<sub>sat</sub>, the corresponding partial pressure equals the saturated vapor pressure P<sub>sat</sub>:
 
 $$
-P_{\rm sat} = \frac{C_{\rm sat}}{k_H} \implies \frac{1}{k_H} \approx P_{\rm sat}
+P_{\text{sat}} = \frac{C_{\text{sat}}}{k_H}
+\quad \Rightarrow \quad
+\frac{1}{k_H} \approx P_{\text{sat}}
 $$
 
-**Comparison Table:**
+### Conceptual comparison
 
-| Law    | Focus            | Mathematical Relation         |
-|--------|-----------------|-------------------------------|
-| Raoult | Vapor Pressure   | \(P_i = x_i P_i^{0}\)       |
-| Henry  | Gas Solubility   | \(C = k_H P\)               |
+| Law | Primary focus | Mathematical form |
+|----|----|----|
+| Raoult's Law | Vapor pressure | P<sub>i</sub> = x<sub>i</sub>P<sub>i</sub><sup>0</sup> |
+| Henry's Law | Gas solubility | C = k<sub>H</sub>P |
 
-- **Raoult** emphasizes changes in vapor pressure  
-- **Henry** emphasizes changes in solute concentration  
+- **Raoult's Law** focuses on vapor pressure changes caused by liquid composition  
+- **Henry's Law** focuses on dissolved gas concentration governed by gas pressure  
+
+In ideal systems, both laws describe the **same linear thermodynamic behavior from different perspectives**.
 
 ---
 
 ## 3. Deviations in Real Solutions
 
-In **non-ideal solutions**, intermolecular interactions (hydrogen bonding, van der Waals, ionic forces) cause deviations.
+Real solutions are rarely ideal. **Intermolecular interactions**, such as hydrogen bonding, polarity differences, and van der Waals forces, lead to deviations.
 
-### Raoult's Law Deviations
+### 3.1 Raoult's Law deviations
 
-- Vapor pressure may **not scale linearly** with mole fraction  
-- **Positive deviation**: Weak solute-solvent interaction → higher vapor pressure  
-- **Negative deviation**: Strong interaction → lower vapor pressure  
+- Vapor pressure no longer varies linearly with mole fraction  
+- **Positive deviation**: weaker intermolecular interactions → higher vapor pressure  
+- **Negative deviation**: stronger interactions → lower vapor pressure  
 
-### Henry's Law Deviations
+### 3.2 Henry's Law deviations
 
-- Gas solubility may **not scale linearly** with partial pressure  
-- Influenced by solvent composition, temperature, and solute-solvent interaction  
+- Gas solubility deviates from linearity at elevated pressures  
+- Strongly influenced by solvent composition and temperature  
 
-**Applicability:**
+### Practical validity in real systems
 
-- Raoult: Still valid for **solvent in dilute solutions**  
-- Henry: Still valid for **trace gases in solution**  
+- **Raoult's Law** remains valid for the **solvent** in dilute solutions  
+- **Henry's Law** remains valid for **trace gas solutes**
 
-**Example: Nitrogen in Propylene**
+**Example: Nitrogen dissolved in liquid propylene**
 
-- Liquid: Mostly propylene, trace nitrogen  
-- Raoult: \(P_{\rm propylene} \approx X_{\rm propylene} P_{\rm propylene}^{0}\)  
-- Henry: \(C_{\rm N2} \approx k_H P_{\rm N2}\)  
+- Liquid phase: predominantly propylene with trace nitrogen  
+- Propylene vapor pressure:
+\[
+P_{\text{propylene}} \approx X_{\text{propylene}} \cdot P_{\text{propylene}}^{0}
+\]
+- Nitrogen solubility:
+\[
+C_{\text{N}_2} \approx k_H \cdot P_{\text{N}_2}
+\]
 
-Even in non-ideal mixtures, these laws provide reliable approximations.
+These approximations are widely used for engineering calculations.
 
 ---
 
 ## 4. Applications in Chemical Engineering
 
-In industrial processes, **non-condensable gas (NCG) purging** can carry volatile liquids, causing material loss. Understanding vapor pressure helps **predict and minimize losses**.
+In industrial storage and transfer systems, **non-condensable gas (NCG) purging** is commonly required. During purging, volatile liquids may evaporate into the gas phase, resulting in material losses.
 
-### Step 1: Vapor pressure of liquid in gas
+### Step 1: Vapor pressure of liquid component
 
 $$
-P_{\rm material} = X_{\rm material} \cdot P_{\rm material}^{0}
+P_{\text{material}} = X_{\text{material}} \cdot P_{\text{material}}^{0}
 $$
 
 ### Step 2: Gas-phase volume fraction
 
 $$
-y_{\rm material} = \frac{P_{\rm material}}{P_{\rm total}}
+y_{\text{material}} = \frac{P_{\text{material}}}{P_{\text{total}}}
 $$
 
-### Mitigation Strategies
+### Loss reduction strategies
 
-- **Increase system pressure** → reduces gas-phase fraction  
-- **Lower temperature** → reduces saturated vapor pressure  
+- Increasing system pressure reduces vapor-phase concentration  
+- Lowering temperature reduces saturated vapor pressure  
 
-**Example:** Propylene tank purged with nitrogen at 20°C, 15 atm  
+### Example: Propylene tank purged with nitrogen
 
-| Parameter                        | Value                   |
-|---------------------------------|------------------------|
-| Mole fraction \(X_{\rm C3H6}\)   | 1                      |
-| Saturated vapor pressure \(P_{\rm C3H6}^{0}\) | 10 atm |
-| System pressure \(P_{\rm total}\) | 15 atm               |
-| Gas-phase fraction \(y_{\rm C3H6}\) | 10/15 ≈ 0.667      |
+Operating conditions: 20&nbsp;°C, total pressure = 15 atm
 
-- Increasing pressure decreases \(y_{\rm C3H6}\)  
-- Lowering temperature to 0°C (\(P_{\rm C3H6}^{0} \approx 5.7 \, \rm atm\)) → \(y_{\rm C3H6} \approx 0.38\)  
+| Parameter | Value |
+|----|----|
+| Mole fraction X<sub>C₃H₆</sub> | 1 |
+| Saturated vapor pressure P<sub>C₃H₆</sub><sup>0</sup> | 10 atm |
+| System pressure P<sub>total</sub> | 15 atm |
 
-✅ **Result:** Significant reduction in propylene loss during NCG purging.
+$$
+y_{\text{C}_3\text{H}_6} = \frac{10}{15} \approx 0.667
+$$
+
+Lowering the temperature to 0&nbsp;°C:
+
+$$
+P_{\text{C}_3\text{H}_6}^{0} \approx 5.7\ \text{atm}
+\quad \Rightarrow \quad
+y_{\text{C}_3\text{H}_6} \approx 0.38
+$$
+
+✅ **Result:** A substantial reduction in propylene loss during nitrogen purging.
 
 ---
 
 ## 5. Summary
 
-1. Raoult's Law and Henry's Law behave similarly in **ideal solutions**, differing mainly in perspective (vapor pressure vs solubility).  
-2. Deviations occur in real solutions, but Raoult's Law for solvents and Henry's Law for trace gases remain useful.  
-3. Chemical engineers can optimize **pressure and temperature** to minimize material losses using these principles.
+1. Raoult's Law and Henry's Law show similar linear behavior in **ideal solutions**.  
+2. In real systems, deviations occur, but Raoult's Law remains applicable to solvents and Henry's Law to trace gases.  
+3. These principles are powerful tools for **pressure control, temperature optimization, and material loss reduction** in chemical engineering practice.
