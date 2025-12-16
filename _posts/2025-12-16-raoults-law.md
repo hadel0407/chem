@@ -213,7 +213,7 @@ $$
 y_{\text{C}_3\text{H}_6} = \frac{10}{30} \approx 0.333
 $$
 
-✅ **Result:** Both lowering temperature and increasing total pressure reduce propylene loss. Combined, the effect is even more significant.
+**Result:** Both lowering temperature and increasing total pressure reduce propylene loss. Combined, the effect is even more significant.
 
 ---
 
