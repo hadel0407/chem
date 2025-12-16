@@ -4,6 +4,9 @@ date: 2025-12-16
 description: "A clear comparison of Raoult's Law and Henry's Law, covering ideal and real solutions with practical chemical engineering examples."
 ---
 
+<!-- 引入 MathJax 渲染公式 -->
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 # Raoult's Law vs Henry's Law: Vapor Pressure and Gas Solubility Explained
 
 In **physical chemistry** and **chemical engineering**, understanding solution behavior is essential for vapor–liquid equilibrium (VLE) analysis, separation processes, and material loss estimation. Two fundamental laws are widely used:
@@ -36,7 +39,7 @@ Where:
 **Example**
 
 A liquid mixture contains 50 mol% ethanol.  
-The saturated vapor pressure of pure ethanol at 25&nbsp;°C is 0.08&nbsp;atm.
+The saturated vapor pressure of pure ethanol at 25 °C is 0.08 atm.
 
 $$
 x_{\text{ethanol}} = 0.5
@@ -124,7 +127,7 @@ In ideal systems, both laws describe the **same linear thermodynamic behavior fr
 
 ## 3. Deviations in Real Solutions
 
-Real solutions are rarely ideal. **Intermolecular interactions**, such as hydrogen bonding, polarity differences, and van der Waals forces, lead to deviations.
+Real solutions deviate from ideality due to **intermolecular forces**, such as hydrogen bonding, polarity differences, and van der Waals forces.
 
 ### 3.1 Raoult's Law deviations
 
@@ -184,7 +187,7 @@ $$
 
 ### Example: Propylene tank purged with nitrogen
 
-Operating conditions: 20&nbsp;°C, total pressure = 15 atm
+Operating conditions: 20 °C, total pressure = 15 atm
 
 | Parameter | Value |
 |----|----|
@@ -192,19 +195,19 @@ Operating conditions: 20&nbsp;°C, total pressure = 15 atm
 | Saturated vapor pressure $P_{\text{C}_3\text{H}_6}^0$ | 10 atm |
 | System pressure $P_{\text{total}}$ | 15 atm |
 
+Vapor-phase mole fraction:
+
 $$
 y_{\text{C}_3\text{H}_6} = \frac{10}{15} \approx 0.667
 $$
 
-Lowering the temperature to 0&nbsp;°C:
+Lowering the temperature to 0 °C:
 
 $$
 P_{\text{C}_3\text{H}_6}^0 \approx 5.7\ \text{atm} \quad \Rightarrow \quad y_{\text{C}_3\text{H}_6} \approx 0.38
 $$
 
-Increasing total pressure：
-
-Keeping temperature at 20 °C but raising total pressure to 30 atm:
+Increasing total pressure while keeping temperature at 20 °C:
 
 $$
 y_{\text{C}_3\text{H}_6} = \frac{10}{30} \approx 0.333
