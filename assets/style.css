@@ -1,19 +1,82 @@
 body {
-  font-family: "Inter", Arial, sans-serif;
-  line-height: 1.8;
-  background-color: #f8f9fa;
+  padding-top: 72px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-h1, h2, h3 {
+/* 内容宽度 */
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* 标题 */
+.post-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.post-meta {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.site-desc {
+  color: #6c757d;
+  font-size: 1.1rem;
+}
+
+/* 二三级标题 */
+.content h2 {
+  margin-top: 3rem;
+  border-left: 4px solid #0d6efd;
+  padding-left: 12px;
+}
+
+.content h3 {
+  margin-top: 2rem;
   font-weight: 600;
 }
 
-.content p {
-  margin-bottom: 1rem;
+/* 表格 */
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
 }
 
+table th, table td {
+  border: 1px solid #dee2e6;
+  padding: 8px 12px;
+}
+
+table th {
+  background-color: #f1f3f5;
+}
+
+/* MathJax 间距 */
+mjx-container {
+  margin: 1.5rem 0 !important;
+}
+
+/* 工程结论块 */
+.engineering-result {
+  background: #f8f9fa;
+  border-left: 5px solid #198754;
+  padding: 16px;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+}
+
+/* 广告位 */
 .ad-slot {
-  background-color: #e9ecef;
-  padding: 15px;
-  border-radius: 8px;
+  min-height: 90px;
 }
