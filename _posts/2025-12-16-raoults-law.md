@@ -42,11 +42,16 @@ P_i = x_i \cdot P_i^0
 $$
 </div>
 
-where:
+<div class="mathjax">
+$$
+\begin{aligned}
+P_i &:\ \text{partial vapor pressure of component } i \text{ in the vapor phase} \\
+x_i &:\ \text{mole fraction of component } i \text{ in the liquid phase} \\
+P_i^0 &:\ \text{saturated vapor pressure of pure component } i \text{ at the same temperature}
+\end{aligned}
+$$
+</div>
 
-- <span class="mathjax">\(P_i\)</span> is the partial vapor pressure of component <span class="mathjax">\(i\)</span> in the vapor phase  
-- <span class="mathjax">\(x_i\)</span> is the mole fraction of component <span class="mathjax">\(i\)</span> in the liquid phase  
-- <span class="mathjax">\(P_i^0\)</span> is the saturated vapor pressure of pure component <span class="mathjax">\(i\)</span> at the same temperature
 
 **Example**
 
