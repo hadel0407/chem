@@ -73,16 +73,6 @@
   <!-- Main content -->
   <main class="container my-5">
     <div class="row">
-      <!-- 左侧文章列表 -->
-      <div class="col-md-3 mb-4">
-        <div class="list-group border shadow-sm sticky-top" style="top: 20px;">
-          {% for post in site.posts %}
-          <a href="{{ post.url }}" class="list-group-item list-group-item-action {% if page.url == post.url %}active{% endif %}">
-            {{ post.title }}
-          </a>
-          {% endfor %}
-        </div>
-      </div>
 
       <!-- 右侧内容 -->
       <div class="col-md-9">
