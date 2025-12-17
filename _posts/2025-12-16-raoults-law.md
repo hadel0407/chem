@@ -42,7 +42,7 @@ P_i = x_i \cdot P_i^0
 $$
 </div>
 
-<div class="mathjax">
+<div class="mathjax" style="text-align: left;">
 $$
 \begin{array}{ll}
 P_i & \text{partial vapor pressure of component } i \text{ in the vapor phase} \\
