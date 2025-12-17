@@ -42,14 +42,14 @@ P_i = x_i \cdot P_i^0
 $$
 </div>
 
-<div class="mathjax" style="margin-left:0; text-align:left;">
-\[
-\begin{array}{ll}
-P_i & \text{partial vapor pressure of component } i \text{ in the vapor phase} \\
-x_i & \text{mole fraction of component } i \text{ in the liquid phase} \\
-P_i^0 & \text{saturated vapor pressure of pure component } i \text{ at the same temperature}
-\end{array}
-\]
+<div class="mathjax">
+$$
+\begin{aligned}
+P_i &\ : \text{partial vapor pressure of component } i \text{ in the vapor phase} \\
+x_i &\ : \text{mole fraction of component } i \text{ in the liquid phase} \\
+P_i^0 &\ : \text{saturated vapor pressure of pure component } i \text{ at the same temperature}
+\end{aligned}
+$$
 </div>
 
 
