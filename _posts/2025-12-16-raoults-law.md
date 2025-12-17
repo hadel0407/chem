@@ -44,13 +44,16 @@ $$
 
 <div class="mathjax">
 $$
+\makebox[0pt][l]{%
 \begin{aligned}
 P_i &\ : \text{partial vapor pressure of component } i \text{ in the vapor phase} \\
 x_i &\ : \text{mole fraction of component } i \text{ in the liquid phase} \\
 P_i^0 &\ : \text{saturated vapor pressure of pure component } i \text{ at the same temperature}
-\end{aligned}
+\end{aligned}%
+}
 $$
 </div>
+
 
 
 **Example**
