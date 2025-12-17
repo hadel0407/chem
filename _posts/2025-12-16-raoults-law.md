@@ -86,16 +86,16 @@ C = k_H \cdot P
 $$
 </div>
 
-<div class="mathjax" style="text-align: left;">
-$$
+<div class="mathjax" style="text-align:left;">
+\(
+\displaystyle
 \begin{aligned}
 C &: \text{concentration of dissolved gas in the liquid} \\
 P &: \text{partial pressure of the gas in the vapor phase} \\
 k_H &: \text{Henry’s constant (depends on solvent and temperature)}
 \end{aligned}
-$$
+\)
 </div>
-
 
 
 **Typical applications include:**
