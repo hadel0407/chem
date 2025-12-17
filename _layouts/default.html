@@ -2,110 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  
-  <!-- Description -->
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Canonical URL -->
-  <link rel="canonical" href="{{ page.url | absolute_url }}">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta property="og:url" content="{{ page.url | absolute_url }}">
-  <meta property="og:site_name" content="{{ site.title }}">
-  {% if page.image %}
-  <meta property="og:image" content="{{ page.image | relative_url | absolute_url }}">
-  {% endif %}
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  {% if page.image %}
-  <meta name="twitter:image" content="{{ page.image | relative_url | absolute_url }}">
-  {% endif %}
-
-  <!-- Favicon -->
-  <link rel="icon" href="{{ '/assets/favicon.png' | relative_url }}" type="image/png">
-  <link rel="shortcut icon" href="{{ '/assets/favicon.png' | relative_url }}" type="image/png">
-
-  <!-- Stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
-
-  <!-- SEO -->
+  <!-- SEO（唯一来源） -->
   {% seo %}
 
-  <!-- Google Analytics GA4 -->
-  {% if site.google_analytics %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- MathJax -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics }}');
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
   </script>
-  {% endif %}
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand me-auto" href="{{ '/' | relative_url }}">Home</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="{{ '/about/' | relative_url }}">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ '/categories/' | relative_url }}">Categories</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{ '/contact/' | relative_url }}">Contact</a></li>
-        </ul>
-      </div>
+
+<!-- 固定导航 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/articles/">Articles</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Main content -->
-  <main class="container my-5">
-    <div class="row">
+<main class="container-fluid my-5 px-4">
+  <div class="content">
 
-      <!-- 右侧内容 -->
-      <div class="col-md-9">
-        {% if page.layout == "home" %}
-          <h1>{{ site.title }}</h1>
-          <p>{{ site.description }}</p>
-        {% else %}
-          <article>
-            <h1>{{ page.title }}</h1>
-            <p class="text-muted">{{ page.date | date: "%Y-%m-%d" }}</p>
-            <div class="content">{{ content }}</div>
-            <div class="ad-slot my-4">
-              <!-- Google AdSense 占位 -->
-            </div>
-          </article>
+    {% if page.layout == "home" %}
+      {{ content }}
+    {% else %}
+      <article>
+        <h1 class="post-title">{{ page.title }}</h1>
+        {% if page.date %}
+          <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</p>
         {% endif %}
-      </div>
-    </div>
-  </main>
+        {{ content }}
+      </article>
+    {% endif %}
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container text-center">
-      <p class="mb-1">&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
-      <small>Chemical engineering knowledge for real-world processes</small>
-      <div class="mt-2">
-        <a href="https://twitter.com" target="_blank" class="text-light me-2">Twitter</a>
-        <a href="https://linkedin.com" target="_blank" class="text-light">LinkedIn</a>
-      </div>
+    <div class="ad-slot my-4 text-center">
+      <!-- Google AdSense -->
     </div>
-  </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </div>
+</main>
+
+<footer class="text-center text-muted py-4 border-top">
+  © {{ site.time | date: "%Y" }} {{ site.title }}
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
