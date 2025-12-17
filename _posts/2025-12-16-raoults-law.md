@@ -98,6 +98,7 @@ k_H &: \text{Henry’s constant (depends on solvent and temperature)}
 </div>
 
 
+
 **Typical applications include:**
 
 - Gas absorption and stripping operations  
