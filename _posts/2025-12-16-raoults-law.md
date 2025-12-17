@@ -42,11 +42,11 @@ P_i = x_i \cdot P_i^0
 $$
 </div>
 
-| Symbol | Meaning |
-|--------|---------|
-| <span class="mathjax">\(P_i\)</span> | partial vapor pressure of component <span class="mathjax">\(i\)</span> in the vapor phase |
-| <span class="mathjax">\(x_i\)</span> | mole fraction of component <span class="mathjax">\(i\)</span> in the liquid phase |
-| <span class="mathjax">\(P_i^0\)</span> | saturated vapor pressure of pure component <span class="mathjax">\(i\)</span> at the same temperature |
+where:
+
+- <span class="mathjax">\(P_i\)</span> is the partial vapor pressure of component <span class="mathjax">\(i\)</span> in the vapor phase  
+- <span class="mathjax">\(x_i\)</span> is the mole fraction of component <span class="mathjax">\(i\)</span> in the liquid phase  
+- <span class="mathjax">\(P_i^0\)</span> is the saturated vapor pressure of pure component <span class="mathjax">\(i\)</span> at the same temperature
 
 **Example**
 
