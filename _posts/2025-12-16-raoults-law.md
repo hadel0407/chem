@@ -1,5 +1,5 @@
 ---
-title: "Raoult's Law vs Henry's Law: Vapor Pressure and Gas Solubility Explained"
+title: "Raoult's Law vs Henry's Law — Reducing Material Loss from Non-Condensable Gas Emissions"
 date: 2025-12-16
 description: "A clear comparison of Raoult's Law and Henry's Law, covering ideal and real solutions with practical chemical engineering examples."
 ---
