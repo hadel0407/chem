@@ -1,9 +1,10 @@
 ---
-title: "Raoult's Law vs Henry's Law — Reducing Material Loss from Non-Condensable Gas Emissions"
+title: "Raoult's Law vs Henry's Law — Reducing Material Loss from NCG Emissions"
 date: 2025-12-16
-description: "A clear comparison of Raoult's Law and Henry's Law, covering ideal and real solutions with practical chemical engineering examples."
+description: "A clear comparison of Raoult's Law and Henry's Law for chemical engineering applications."
+keywords: [Raoult's Law, Henry's Law, VLE, chemical engineering]
+author: "Hadel"
 ---
-
 <!-- 引入 MathJax 并指定仅渲染带 class="mathjax" 的元素 -->
 <script>
 window.MathJax = {
