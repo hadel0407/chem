@@ -53,32 +53,18 @@
 
 <!-- ================= 页面主体内容 ================= -->
 <main class="container px-4">
-  <!-- 内容容器 -->
   <div class="content">
 
-    <!-- 判断当前页面是否为首页 -->
-    {% if page.layout == "home" %}
+    {{ content }}
 
-      <!-- 首页直接输出内容（通常是文章列表） -->
-      {{ content }}
+    <!-- 广告位 -->
+    <div class="ad-slot my-4 text-center">
+      <!-- Google AdSense -->
+    </div>
 
-    {% else %}
+  </div>
+</main>
 
-      <!-- 非首页（文章页 / 关于页等） -->
-      <article>
-
-        <!-- 如果页面有发布日期，则显示 -->
-        {% if page.date %}
-          <p class="post-meta">
-            {{ page.date | date: "%Y-%m-%d" }}
-          </p>
-        {% endif %}
-
-        <!-- 页面正文内容 -->
-        {{ content }}
-
-      </article>
-    {% endif %}
 
     <!-- ================= 广告位 ================= -->
     <div class="ad-slot my-4 text-center">
