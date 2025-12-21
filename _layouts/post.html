@@ -1,14 +1,27 @@
 ---
 layout: default
 ---
-<article class="mb-4" style="padding-top: 0px;">
+
+<main class="container px-4 mt-5">
+  <article class="mb-4">
+    
+    <!-- 文章标题 -->
     <h1 class="mt-4">{{ page.title }}</h1>
-  <!-- 显示文章日期 -->
-  <p class="text-muted">{{ page.date | date: "%Y-%m-%d" }}</p>
-  <div class="content">
-    {{ content }}
-  </div>
-  <div class="ad-slot my-3">
-    <!-- Google AdSense 占位 -->
-  </div>
-</article>
+
+    <!-- 文章发布日期 -->
+    {% if page.date %}
+      <p class="text-muted">{{ page.date | date: "%Y-%m-%d" }}</p>
+    {% endif %}
+
+    <!-- 文章正文内容 -->
+    <div class="content">
+      {{ content }}
+    </div>
+
+    <!-- 广告位 -->
+    <div class="ad-slot my-4 text-center">
+      <!-- Google AdSense 占位 -->
+    </div>
+
+  </article>
+</main>
