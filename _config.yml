@@ -1,9 +1,23 @@
 title: "Chemical Process Problem Solving"
 description: "Using theory to solve real chemical production problems."
-baseurl: ""
-url: "https://chem.zhanghd.fun"
+baseurl: ""  # 根路径
+url: "https://chem.zhanghd.fun"  # 你的站点地址
 markdown: kramdown
 theme: minima
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap   # 添加 sitemap 插件
+
 google_analytics: G-0TB5EFN78M
+
+author:
+  name: "Hadel"
+  email: "zhdong0407@gmail.com"
+
+# 可选：社交媒体
+social:
+  twitter: "你的Twitter"
+  github: "hadel0407"
+
+# sitemap 设置（如果使用 jekyll-sitemap 默认即可）
