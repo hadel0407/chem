@@ -53,16 +53,16 @@
 
 <!-- ================= 页面主体内容 ================= -->
 <main class="container px-4">
-  <div class="content">
-
+  {% if page.layout == "home" %}
     {{ content }}
-
-    <!-- 广告位 -->
-    <div class="ad-slot my-4 text-center">
-      <!-- Google AdSense -->
-    </div>
-
-  </div>
+  {% else %}
+    <article>
+      {% if page.date %}
+        <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</p>
+      {% endif %}
+      {{ content }}
+    </article>
+  {% endif %}
 </main>
 
 <!-- ================= 页脚 ================= -->
