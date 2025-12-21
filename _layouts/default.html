@@ -1,63 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- 文档字符集，避免中文乱码 -->
   <meta charset="UTF-8">
+
+  <!-- 响应式布局：适配手机 / 平板 / 桌面 -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- SEO（唯一来源） -->
+  <!-- SEO（唯一来源）
+       使用 Jekyll SEO Tag 插件自动生成 title / description / canonical / OG / Twitter 标签
+       注意：不要再手动写 <title>，否则会冲突 -->
   {% seo %}
 
-  <!-- Bootstrap -->
+  <!-- Bootstrap 5 样式文件（CDN 引入） -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!-- 自定义样式
+       使用 relative_url 兼容 GitHub Pages 子路径部署 -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
 
-<!-- 固定导航 -->
+<!-- ================= 固定顶部导航栏 ================= -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container-fluid px-4">
+
+    <!-- 网站 Logo / 首页链接 -->
     <a class="navbar-brand" href="{{ '/' | relative_url }}">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+    <!-- 移动端折叠菜单按钮 -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- 导航菜单内容 -->
     <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- 菜单靠右 -->
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a>
-        <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact/">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about/">About</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<main class="container px-4" >
+<!-- ================= 页面主体内容 ================= -->
+<main class="container px-4">
+
+  <!-- 顶部占位，防止 fixed-top 导航栏遮挡内容
+       你也可以改成 CSS 的 padding-top -->
   <div style="height: 20px;"></div>
+
+  <!-- 内容容器 -->
   <div class="content">
 
+    <!-- 判断当前页面是否为首页 -->
     {% if page.layout == "home" %}
+
+      <!-- 首页直接输出内容（通常是文章列表） -->
       {{ content }}
+
     {% else %}
+
+      <!-- 非首页（文章页 / 关于页等） -->
       <article>
+
+        <!-- 如果页面有发布日期，则显示 -->
         {% if page.date %}
-          <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</p>
+          <p class="post-meta">
+            {{ page.date | date: "%Y-%m-%d" }}
+          </p>
         {% endif %}
+
+        <!-- 页面正文内容 -->
         {{ content }}
+
       </article>
     {% endif %}
 
+    <!-- ================= 广告位 ================= -->
     <div class="ad-slot my-4 text-center">
-      <!-- Google AdSense -->
+      <!-- Google AdSense 代码将来放这里 -->
     </div>
 
   </div>
 </main>
 
+<!-- ================= 页脚 ================= -->
 <footer class="text-center text-muted py-4 border-top">
   © {{ site.time | date: "%Y" }} {{ site.title }}
 </footer>
 
+<!-- Bootstrap JS（包含 Popper） -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
+
