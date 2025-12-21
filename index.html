@@ -2,16 +2,57 @@
 layout: default
 title: "Chemical Process Problem Solving"
 ---
+<!--
+  Jekyll Front Matter（页面头信息）
+  layout: default  → 使用默认布局（即你之前的 default.html）
+  title: 页面标题 → 会被 {% seo %} 自动用于 <title> 和 SEO 标签
+-->
+
+<!-- ================= 页面简介区域 ================= -->
 <div class="text-center mt-5 mt-md-6 mb-4">
-  <p class="lead">Using theory to solve real chemical production problems</p>
+  <!--
+    text-center   : 文本居中
+    mt-5          : 手机上顶部外边距（3rem ≈ 48px）
+    mt-md-6       : 中等屏幕及以上更大的顶部间距（若未自定义则等同 mt-5）
+    mb-4          : 底部外边距（1.5rem ≈ 24px）
+  -->
+  <p class="lead">
+    <!-- lead：Bootstrap 的“引导段落”，字号更大、行距更舒适 -->
+    Using theory to solve real chemical production problems
+  </p>
 </div>
 
+<!-- ================= 文章列表标题 ================= -->
 <h2>Articles</h2>
+
+<!-- ================= 文章列表 ================= -->
 <ul class="list-group mb-5">
+  <!--
+    list-group    : Bootstrap 列表组件
+    mb-5          : 列表底部留出较大间距，避免贴近页脚
+  -->
+
+  <!-- 遍历站点中的所有文章（_posts 目录） -->
   {% for post in site.posts %}
+
     <li class="list-group-item d-flex justify-content-between align-items-center">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      <span class="text-muted">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <!--
+        list-group-item        : 列表项样式
+        d-flex                 : 使用 Flex 布局
+        justify-content-between: 左右两端对齐（标题在左，日期在右）
+        align-items-center     : 垂直居中对齐
+      -->
+
+      <!-- 文章标题，点击进入文章详情页 -->
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+
+      <!-- 文章发布日期，灰色显示 -->
+      <span class="text-muted">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </span>
     </li>
+
   {% endfor %}
 </ul>
