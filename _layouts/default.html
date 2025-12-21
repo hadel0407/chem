@@ -1,1 +1,71 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- SEO（唯一来源） --> {% seo %} <!-- Bootstrap --> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Custom CSS --> <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"> </head> <body> <!-- 固定导航 --> <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <div class="container-fluid px-4"> <a class="navbar-brand" href="{{ '/' | relative_url }}">Home</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav ms-auto"> <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a> <li class="nav-item"><a class="nav-link" href="/about/">About</a></li> </ul> </div> </div> </nav> <main class="container px-4" > <div style="height: 20px;"></div> <div class="content"> {% if page.layout == "home" %} {{ content }} {% else %} <article> {% if page.date %} <p class="post-meta">{{ page.date | date: "%Y-%m-%d" }}</p> {% endif %} {{ content }} </article> {% endif %} <div class="ad-slot my-4 text-center"> <!-- Google AdSense --> </div> </div> </main> <footer class="text-center text-muted py-4 border-top"> © {{ site.time | date: "%Y" }} {{ site.title }} </footer> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 文档字符集 -->
+  <meta charset="UTF-8">
+
+  <!-- 响应式布局 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  {% seo %}
+
+  <!-- Bootstrap 样式 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+<!-- 固定顶部导航 -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container px-4">
+    <a class="navbar-brand" href="{{ '/' | relative_url }}">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/contact/">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about/">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- 页面主体 -->
+<main class="container px-4" style="padding-top: 70px;">
+  <div class="content">
+
+    {% if page.date %}
+      <!-- 文章页显示标题和日期 -->
+      <article class="mb-4">
+        <h1 class="mt-4">{{ page.title }}</h1>
+        <p class="text-muted">{{ page.date | date: "%Y-%m-%d" }}</p>
+        {{ content }}
+      </article>
+    {% else %}
+      <!-- 首页或无日期页面直接显示内容 -->
+      {{ content }}
+    {% endif %}
+
+    <!-- 广告位 -->
+    <div class="ad-slot my-4 text-center">
+      <!-- Google AdSense -->
+    </div>
+
+  </div>
+</main>
+
+<!-- 页脚 -->
+<footer class="text-center text-muted py-4 border-top">
+  © {{ site.time | date: "%Y" }} {{ site.title }}
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
