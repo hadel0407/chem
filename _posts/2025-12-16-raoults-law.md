@@ -95,8 +95,6 @@ k_H &: \text{Henry’s constant (depends on solvent and temperature)}
 \)
 </div>
 
-
-
 **Typical applications include:**
 
 - Gas absorption and stripping operations  
@@ -285,3 +283,10 @@ $$
 1. Raoult's Law and Henry's Law show similar linear behavior in **ideal solutions**.  
 2. In real systems, deviations occur, but Raoult's Law remains applicable to solvents and Henry's Law to trace gases.  
 3. These principles are powerful tools for **pressure control, temperature optimization, and material loss reduction** in chemical engineering practice.
+
+---
+
+**Author:** Hadel  
+**Published on:** 2025-12-16  
+**Note:** For reprints or citations, please attribute to Hadel, [chem.zhanghd.fun](https://chem.zhanghd.fun)  
+© 2025 Hadel. All rights reserved.
