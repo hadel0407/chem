@@ -1,0 +1,6 @@
+# robots.txt for chem.zhanghd.fun
+
+User-agent: *
+Disallow: 
+
+Sitemap: https://chem.zhanghd.fun/sitemap.xml
