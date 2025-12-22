@@ -143,12 +143,13 @@ $$
 </div>
 
 ### Conceptual comparison
+- **Raoult’s Law**  
+  **Engineering focus:** Vapor pressure of volatile liquids  
+  **Mathematical form:** P<sub>i</sub> = x<sub>i</sub> P<sub>i</sub><sup>0</sup>
 
-| Law | Engineering focus | Mathematical form |
-|----|----|----|
-| Raoult’s Law | Vapor pressure of volatile liquids | P<sub>i</sub> = x<sub>i</sub> P<sub>i</sub><sup>0</sup> |
-| Henry’s Law | Solubility of trace gases | C = k<sub>H</sub> P |
-
+- **Henry’s Law**  
+  **Engineering focus:** Solubility of trace gases  
+  **Mathematical form:** C = k<sub>H</sub> P
 **Key insight:**  
 In ideal systems, both laws describe the **same linear thermodynamic behavior**, but from opposite phase perspectives.
 
@@ -223,14 +224,9 @@ $$
 
 ### Example: Propylene tank purged with nitrogen
 
-Operating conditions: 20 °C, total pressure = 15 atm
+Operating conditions: 20 °C, total pressure = 15 atm.
 
-| Parameter | Value |
-|---|---|
-| x<sub>C₃H₆</sub> | 1 |
-| P<sub>C₃H₆</sub><sup>0</sup> | 10 atm |
-| P<sub>total</sub> | 15 atm |
-
+At 20 °C, the saturated vapor pressure of propylene is 10 atm, and the mole fraction of propylene in the liquid phase is 1. The vapor-phase mole fraction can be calculated as:
 <div class="mathjax">
 $$
 y_{\text{C}_3\text{H}_6} = \frac{10}{15} \approx 0.67
@@ -238,7 +234,7 @@ $$
 </div>
 
 Lowering temperature to 0 °C:
-
+At 0 °C, the saturated vapor pressure of propylene decreases to approximately 5.7 atm. The vapor-phase mole fraction is then:
 <div class="mathjax">
 $$
 y_{\text{C}_3\text{H}_6} \approx \frac{5.7}{15} \approx 0.38
