@@ -233,7 +233,24 @@ y_{\text{C}_3\text{H}_6} = \frac{10}{15} \approx 0.67
 $$
 </div>
 
-Lowering temperature to 0 °C:
+**Relation between NCG volume and propylene loss:**  
+If a volume \(V_{\text{NCG}}\) of non-condensable gas is purged from the system, the volume of propylene lost is:
+
+<div class="mathjax">
+$$
+V_{\text{C}_3\text{H}_6} = y_{\text{C}_3\text{H}_6} \cdot V_{\text{NCG}}
+$$
+</div>
+
+For example, if 100 L of NCG is purged:
+
+<div class="mathjax">
+$$
+V_{\text{C}_3\text{H}_6} = 0.67 \times 100 \approx 67\ \text{L}
+$$
+</div>
+
+Lowering temperature to 0 °C:
 At 0 °C, the saturated vapor pressure of propylene decreases to approximately 5.7 atm. The vapor-phase mole fraction is then:
 <div class="mathjax">
 $$
@@ -241,7 +258,15 @@ y_{\text{C}_3\text{H}_6} \approx \frac{5.7}{15} \approx 0.38
 $$
 </div>
 
-Increasing total pressure to 30 atm:
+If 100 L of NCG is purged at this condition:
+
+<div class="mathjax">
+$$
+V_{\text{C}_3\text{H}_6} = 0.38 \times 100 \approx 38\ \text{L}
+$$
+</div>
+
+Increasing total pressure to 30 atm:
 
 <div class="mathjax">
 $$
@@ -249,8 +274,17 @@ y_{\text{C}_3\text{H}_6} \approx \frac{10}{30} \approx 0.33
 $$
 </div>
 
+If 100 L of NCG is purged at 30 atm:
+
+<div class="mathjax">
+$$
+V_{\text{C}_3\text{H}_6} = 0.33 \times 100 \approx 33\ \text{L}
+$$
+</div>
+
 **Conclusion:**  
-Lower temperature and higher pressure significantly reduce material loss during NCG purging.
+Lower temperature and higher pressure significantly reduce material loss during NCG purging. The volume of propylene lost is directly proportional to the mole fraction in the vapor phase, illustrating how operating conditions can control material loss.
+
 
 ---
 
