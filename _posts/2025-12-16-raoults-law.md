@@ -265,6 +265,7 @@ To make calculations easier, We developed an app that can calculate the **satura
 
 ---
 
-Author: Hadel
-Published: 2025-12-16
+Author: Hadel  
+Published: 2025-12-16  
 Source: chem.zhanghd.fun
+
