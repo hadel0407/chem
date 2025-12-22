@@ -263,7 +263,7 @@ Lowering temperature or increasing total pressure both significantly reduce prop
 
 ---
 ## Recommended Engineering Tool
-To help engineers and process practitioners quickly calculate saturated vapor pressures, vapor-phase mole fractions, and material losses due to NCG purging, I developed a practical Saturated Vapor Pressure Calculator App.
+To make calculations easier, I developed an app that can calculate the **saturated vapor pressure for hundreds of chemical substances**. You can download it here: [Vapor Pressure Calculator App](https://play.google.com/store/apps/details?id=com.zhanghd.vapor)
 
 📲 Download now:
 👉 Saturated Vapor Pressure Calculator App
