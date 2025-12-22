@@ -265,5 +265,5 @@ Lower temperature and higher pressure significantly reduce material loss during 
 **Author:** Hadel  
 **Published:** 2025-12-16  
 **Citation:** chem.zhanghd.fun  
-© 2025 Hadel. All rights reserved.
+**© 2025 Hadel. All rights reserved.**
 ****
