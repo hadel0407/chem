@@ -224,7 +224,6 @@ $$
 
 ### Example: Propylene tank purged with nitrogen
 
-Operating conditions and Propylene Loss during NCG Purging
 
 At 20 °C and a total pressure of 15 atm, the saturated vapor pressure of propylene is 10 atm, and the liquid phase consists almost entirely of propylene (mole fraction ≈ 1). Under these conditions, the mole fraction of propylene in the vapor phase can be calculated as follows:
 
