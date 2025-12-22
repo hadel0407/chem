@@ -251,7 +251,8 @@ If the total system pressure is increased to 30 atm at 20 °C (with saturate
 <div class="mathjax"> $$ y_{\text{C3H6}} = \frac{10}{30} \approx 0.333 $$ $$ V_{\text{C3H6,loss}} \approx \frac{0.333}{1 - 0.333} \cdot 100 \approx 50\ \text{L} $$ </div>
 
 Conclusion:
-Lowering temperature or increasing total pressure both significantly reduce propylene loss during NCG purging. The volume of propylene lost is directly proportional to the mole fraction in the vapor phase, demonstrating how operating conditions can effectively control material loss.
+Lowering temperature or increasing total pressure both significantly reduce propylene loss during NCG purging. 
+
 ---
 
 ## 5. Summary
