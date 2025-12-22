@@ -265,7 +265,4 @@ To make calculations easier, We developed an app that can calculate the **satura
 
 ---
 
-**Author:** Hadel  
-**Published:** 2025-12-16  
-**Citation:** chem.zhanghd.fun  
-
+Hadel. (2025, December 16). Raoult's Law vs Henry's Law — Reducing Material Loss from NCG Emissions. Retrieved from https://chem.zhanghd.fun
