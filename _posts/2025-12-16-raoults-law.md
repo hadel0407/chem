@@ -220,7 +220,6 @@ $$
 
 - Increase total system pressure  
 - Reduce operating temperature  
-- Minimize purge flow rate  
 
 ### Example: Propylene tank purged with nitrogen
 
