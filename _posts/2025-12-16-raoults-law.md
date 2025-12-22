@@ -149,7 +149,7 @@ $$
 
 - **Henry’s Law**  
   **Engineering focus:** Solubility of trace gases  
-  **Mathematical form:** C = k<sub>H</sub> P
+  **Mathematical form:** C = k<sub>H</sub> P<br>
 **Key insight:**  
 In ideal systems, both laws describe the **same linear thermodynamic behavior**, but from opposite phase perspectives.
 
