@@ -262,6 +262,13 @@ Lowering temperature or increasing total pressure both significantly reduce prop
 3. Applying these principles enables effective **pressure control, temperature optimization, and loss reduction** in chemical engineering systems.
 
 ---
+Recommended Engineering Tool
+To help engineers and process practitioners quickly calculate saturated vapor pressures, vapor-phase mole fractions, and material losses due to NCG purging, I developed a practical Saturated Vapor Pressure Calculator App.
+
+📲 Download now:
+👉 Saturated Vapor Pressure Calculator App
+
+---
 
 **Author:** Hadel  
 **Published:** 2025-12-16  
