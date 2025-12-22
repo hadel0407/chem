@@ -226,7 +226,7 @@ $$
 
 Operating conditions and Propylene Loss during NCG Purging
 
-At 20 °C with a total pressure of 15 atm, the saturated vapor pressure of propylene is 10 atm, and the mole fraction of propylene in the liquid phase is 1. The vapor-phase mole fraction of propylene can be calculated as:
+At 20 °C and a total pressure of 15 atm, the saturated vapor pressure of propylene is 10 atm, and the liquid phase consists almost entirely of propylene (mole fraction ≈ 1). Under these conditions, the mole fraction of propylene in the vapor phase can be calculated as follows:
 
 <div class="mathjax"> $$ y_{\text{C3H6}} = \frac{P_{\text{C3H6}}}{P_{\text{total}}} = \frac{10}{15} \approx 0.667 $$ </div>
 
