@@ -265,9 +265,6 @@ Lowering temperature or increasing total pressure both significantly reduce prop
 ## Recommended Engineering Tool
 To make calculations easier, I developed an app that can calculate the **saturated vapor pressure for hundreds of chemical substances**. You can download it here: [Vapor Pressure Calculator App](https://play.google.com/store/apps/details?id=com.zhanghd.vapor)
 
-📲 Download now:
-👉 Saturated Vapor Pressure Calculator App
-
 ---
 
 **Author:** Hadel  
