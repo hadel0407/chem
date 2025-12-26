@@ -181,17 +181,15 @@ To make the bottom completely water-free, the **core goal** is to ensure all fee
 - Increasing reflux increases total top vapor flow, enhancing the top’s theoretical water-carrying capacity.
   
 ---
+<div class="post-nav" style="display:flex; justify-content:space-between; margin-top:2em;">
+  {{ with .Prev }}
+  <a href="{{ .Permalink }}" class="button">← Previous: {{ .Title }}</a>
+  {{ end }}
 
-<div style="display:flex; justify-content:space-between; margin-top:2em;">
-  <a href="/articles/2025-12-16-raoults-law" class="button" style="padding:0.5em 1em; background:#2a7ae2; color:white; text-decoration:none; border-radius:5px;">
-    ← Previous: Raoult's Law vs Henry's Law
-  </a>
-  <a href="/articles/2025-12-28-next-article" class="button" style="padding:0.5em 1em; background:#2a7ae2; color:white; text-decoration:none; border-radius:5px;">
-    Next: Next Article →
-  </a>
+  {{ with .Next }}
+  <a href="{{ .Permalink }}" class="button">Next: {{ .Title }} →</a>
+  {{ end }}
 </div>
----
-
 Author: Hadel  
 Published: 2025-12-26  
 Source: chem.zhanghd.fun
