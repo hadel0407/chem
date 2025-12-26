@@ -179,7 +179,16 @@ To make the bottom completely water-free, the **core goal** is to ensure all fee
 
 **4. Reflux ratio effect on top water-carrying capacity**  
 - Increasing reflux increases total top vapor flow, enhancing the top’s theoretical water-carrying capacity.
+---
 
+<div style="display:flex; justify-content:space-between; margin-top:2em;">
+  <a href="/articles/2025-12-16-raoults-law" class="button" style="padding:0.5em 1em; background:#2a7ae2; color:white; text-decoration:none; border-radius:5px;">
+    ← Previous: Raoult's Law vs Henry's Law
+  </a>
+  <a href="/articles/2025-12-28-next-article" class="button" style="padding:0.5em 1em; background:#2a7ae2; color:white; text-decoration:none; border-radius:5px;">
+    Next: Next Article →
+  </a>
+</div>
 ---
 
 Author: Hadel  
