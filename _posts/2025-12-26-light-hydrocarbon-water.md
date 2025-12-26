@@ -182,14 +182,14 @@ To make the bottom completely water-free, the **core goal** is to ensure all fee
   
 ---
 <div class="post-nav" style="display:flex; justify-content:space-between; margin-top:2em;">
-  {{ with .Prev }}
-  <a href="{{ .Permalink }}" class="button">← Previous: {{ .Title }}</a>
-  {{ end }}
-
-  {{ with .Next }}
-  <a href="{{ .Permalink }}" class="button">Next: {{ .Title }} →</a>
-  {{ end }}
+  {% if page.previous %}
+    <a href="{{ page.previous.url }}" class="button">← Previous: {{ page.previous.title }}</a>
+  {% endif %}
+  {% if page.next %}
+    <a href="{{ page.next.url }}" class="button">Next: {{ page.next.title }} →</a>
+  {% endif %}
 </div>
+---
 Author: Hadel  
 Published: 2025-12-26  
 Source: chem.zhanghd.fun
