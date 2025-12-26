@@ -179,6 +179,7 @@ To make the bottom completely water-free, the **core goal** is to ensure all fee
 
 **4. Reflux ratio effect on top water-carrying capacity**  
 - Increasing reflux increases total top vapor flow, enhancing the top’s theoretical water-carrying capacity.
+  
 ---
 
 <div style="display:flex; justify-content:space-between; margin-top:2em;">
