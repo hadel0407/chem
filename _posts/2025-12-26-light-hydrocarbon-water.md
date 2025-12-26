@@ -181,6 +181,10 @@ To make the bottom completely water-free, the **core goal** is to ensure all fee
 - Increasing reflux increases total top vapor flow, enhancing the top’s theoretical water-carrying capacity.
   
 ---
+## Recommended Engineering Tool
+To make calculations easier, We developed an app that can calculate the **saturated vapor pressure for hundreds of chemical substances**. You can download it here: [Vapor Pressure Calculator App](https://play.google.com/store/apps/details?id=com.zhanghd.vapor)
+
+---
 <div class="post-nav" style="display:flex; justify-content:space-between; margin-top:2em;">
   {% if page.previous %}
     <a href="{{ page.previous.url }}" class="button">← Previous: {{ page.previous.title }}</a>
